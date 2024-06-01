@@ -1,0 +1,34 @@
+.chat-list {
+  position: relative;
+  top: 180px;
+  padding: 0 63px;
+  z-index: 50;
+}
+
+.chat-list-icon {
+  cursor: pointer;
+  transition-duration: 0.3s;
+}
+
+.chat-list-icon:hover {
+  transition-duration: 0.3s;
+  color: #712cf9;
+}
+
+.card-content{
+    height: 300px;
+    overflow-y: scroll;
+}
+
+
+
+.card-content:only-child{
+    cursor: pointer;
+}
+
+@media (max-width: 558px) {
+  .chat-list {
+    top: 20px;
+  }
+}
+

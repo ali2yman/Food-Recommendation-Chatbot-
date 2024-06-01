@@ -1,0 +1,80 @@
+/* --------- Start Bubbles -------------- */
+.bubbles {
+  overflow-y: scroll;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  
+}
+
+
+.messages-container {
+  position: absolute;
+  top: 130px;
+  overflow-y: scroll;
+  width: 54%;
+  height: 64%;
+  z-index: 200;
+}
+
+@media (min-width: 1000px) {
+  .chat-body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .messages-container {
+    width: 60%;
+  }
+}
+@media (max-width: 558px) {
+    .messages-container {
+        top: 70px;
+        width: 100%;
+      }
+    .chat-body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+  
+}
+
+.right,
+.left {
+  display: flex;
+  padding: 0 20px;
+}
+
+.message-bubble {
+  max-width: 50%;
+  z-index: 100;
+}
+
+.right {
+  justify-content: right;
+}
+
+.lfet {
+  justify-content: left;
+}
+
+.right p,
+.left p {
+  padding: 10px;
+  color: black;
+  opacity: 0.8;
+}
+
+.right p {
+  border-radius: 20px 0 20px 20px;
+  background-color: lightblue;
+}
+
+.left p {
+  border-radius: 0 20px 20px 20px;
+  background-color: lightcoral;
+}
+
+/* --------- End Bubbles -------------- */
